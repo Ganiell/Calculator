@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-button-operator',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button-operator.component.css']
 })
 export class ButtonOperatorComponent implements OnInit {
+
+  @Input() operator: string = ''
 
   constructor() { }
 
