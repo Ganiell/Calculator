@@ -1,19 +1,18 @@
 button {
-    width: 70px;
+    width: 60px;
     height: 50px;
     margin: 4px;
-    font-size: 2rem;
-    color: rgb(90, 82, 143);
+    font-size: 1.8rem;
+    color: rgb(37, 88, 117);
     border: none;
     border-radius: 10px;
     border-bottom: solid 4px darkgray;
     font-weight: bolder;
-    background-color: rgb(246, 246, 246);
-    transition: ease-in-out 0.07s;
+    background-color: rgb(231, 226, 200);    transition: ease-in-out 0.07s;
     cursor: pointer;
 }
 button:active{
-    border-bottom: solid 4px rgba(13, 78, 78, 0.376);
+    border-bottom: solid 4px rgb(39, 85, 87);
     transform: translateY(2px);
     transition: ease-in-out 0.07s;
     background-color: white;

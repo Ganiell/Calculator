@@ -1,0 +1,17 @@
+.buttons {
+    /* background-color: red; */
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(25, 67, 83, 0.918);
+    padding: 8px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.button-equal-reset {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
