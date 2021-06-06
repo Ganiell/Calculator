@@ -1,0 +1,7 @@
+div {
+    background-color: rgba(13, 78, 78, 0.376);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 260px;
+}

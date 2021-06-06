@@ -5,6 +5,8 @@ import { ButtonsNumbersComponent } from './buttons-numbers/buttons-numbers.compo
 import { ButtonsOperatorsComponent } from './buttons-operators/buttons-operators.component';
 import { ButtonNumberComponent } from './button-number/button-number.component';
 import { ButtonOperatorComponent } from './button-operator/button-operator.component';
+import { ButtonDeleteComponent } from './button-delete/button-delete.component';
+import { ButtonEqualComponent } from './button-equal/button-equal.component';
 
 
 
@@ -14,7 +16,9 @@ import { ButtonOperatorComponent } from './button-operator/button-operator.compo
     ButtonsNumbersComponent,
     ButtonsOperatorsComponent,
     ButtonNumberComponent,
-    ButtonOperatorComponent
+    ButtonOperatorComponent,
+    ButtonDeleteComponent,
+    ButtonEqualComponent
   ],
   imports: [
     CommonModule

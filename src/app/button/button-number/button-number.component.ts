@@ -9,6 +9,7 @@ export class ButtonNumberComponent implements OnInit {
 
   @Input() number: string = ''
 
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -1,14 +1,12 @@
 button {
     width: 70px;
     height: 50px;
-    margin: 4px;
-    font-size: 2rem;
+    margin: 5px;
     color: rgb(90, 82, 143);
+    background-color: rgb(246, 246, 246);
     border: none;
     border-radius: 10px;
     border-bottom: solid 4px darkgray;
-    font-weight: bolder;
-    background-color: rgb(246, 246, 246);
     transition: ease-in-out 0.07s;
     cursor: pointer;
 }
