@@ -4,10 +4,10 @@
     /* align-items: flex-end; */
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgba(25, 67, 83, 0.918);
+    background-color: rgba(15, 57, 73, 0.918);
     padding: 8px;
     border-radius: 20px;
-    width: 300px;
+    width: 310px;
 }
 
 .button-equal-reset {
