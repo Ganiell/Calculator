@@ -12,11 +12,6 @@ export class ButtonNumberComponent implements OnInit {
 
   constructor(private numbersService: NumbersService) { }
 
-  typed(){
-    this.numbersService.setNumber(this.number)
-    // console.log(this.numbersService.geNumber())
-  }
-
   ngOnInit(): void {
   }
 

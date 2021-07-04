@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { NumbersService } from 'src/app/numbers.service';
 
 @Component({
   selector: 'app-button-operator',
@@ -9,9 +10,10 @@ export class ButtonOperatorComponent implements OnInit {
 
   @Input() operator: string = ''
 
-  constructor() { }
+  constructor(private numbersServie: NumbersService) { }
 
   ngOnInit(): void {
   }
+
 
 }

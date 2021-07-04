@@ -5,19 +5,13 @@ import { EventEmitter, Injectable } from '@angular/core';
 })
 export class NumbersService {
 
-  private number: string = ''
-
-  changedNumber = new EventEmitter()
-
-  constructor() { }
-
-  geNumber(): string{
-    return this.number
-  }
-
-  setNumber(n: string){
-    this.number = n
-    this.changedNumber.emit(n)
-  }
+  constructor() { }  
 
 }
+
+type NumbersAndOpetaros = {
+  number: number[],
+  operator: string[],
+}
+
+

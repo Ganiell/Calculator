@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NumbersService } from 'src/app/numbers.service';
 
 @Component({
   selector: 'app-button-delete',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonDeleteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private numbersService: NumbersService) { }
 
   ngOnInit(): void {
+
   }
 
 }
