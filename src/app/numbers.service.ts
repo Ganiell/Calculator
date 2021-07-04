@@ -18,7 +18,7 @@ export class NumbersService {
   }
 
   public setDisplay(display: string) {
-    this.display+= display
+    this.display = display
     this.numberChanges.emit()
   }
 

@@ -9,7 +9,6 @@ import { NumbersService } from 'src/app/numbers.service';
 export class ButtonNumberComponent implements OnInit {
 
   @Input() number: string = ''
-  display: string = ''
 
   constructor(private numbersService: NumbersService) { }
 
@@ -17,7 +16,7 @@ export class ButtonNumberComponent implements OnInit {
   }
 
   addNumber(): void {
-    this.numbersService.setDisplay(this.number)
+    this.numbersService.setDisplay(this.numbersService.getDisplay() + this.number)
   }
 
 }

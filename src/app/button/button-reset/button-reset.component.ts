@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NumbersService } from 'src/app/numbers.service';
 
 @Component({
   selector: 'app-button-reset',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonResetComponent implements OnInit {
 
-  constructor() { }
+  constructor(private numberService: NumbersService) { }
 
   ngOnInit(): void {
+  }
+
+  public reset(){
+    this.numberService.setDisplay("")
   }
 
 }

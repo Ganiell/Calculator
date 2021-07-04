@@ -12,6 +12,12 @@ export class ButtonDeleteComponent implements OnInit {
 
   ngOnInit(): void {
 
+  } 
+
+  delete(){
+    let display = this.numbersService.getDisplay();
+    display = display.substring(0, display.length - 1)
+    this.numbersService.setDisplay(display);
   }
 
 }
