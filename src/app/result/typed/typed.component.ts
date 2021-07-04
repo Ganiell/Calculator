@@ -8,13 +8,16 @@ import { NumbersService } from 'src/app/numbers.service';
 })
 export class TypedComponent implements OnInit {
 
+  display: string = '';
 
-  constructor(private numbersService: NumbersService) { }
-
-  number: string = ''
+  constructor(private numbersService: NumbersService) { 
+  }
   
   ngOnInit(): void {
-
+    this.numbersService.numberChanges.subscribe( () => {
+      this.display = this.numbersService.getDisplay()
+    })
   }
+
 
 }

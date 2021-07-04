@@ -9,10 +9,15 @@ import { NumbersService } from 'src/app/numbers.service';
 export class ButtonNumberComponent implements OnInit {
 
   @Input() number: string = ''
+  display: string = ''
 
   constructor(private numbersService: NumbersService) { }
 
   ngOnInit(): void {
+  }
+
+  addNumber(): void {
+    this.numbersService.setDisplay(this.number)
   }
 
 }

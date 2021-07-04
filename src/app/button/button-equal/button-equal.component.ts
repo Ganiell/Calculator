@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NumbersService } from 'src/app/numbers.service';
 
 @Component({
   selector: 'app-button-equal',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonEqualComponent implements OnInit {
 
-  constructor() { }
+  constructor(private numberService: NumbersService) { }
 
   ngOnInit(): void {
   }
