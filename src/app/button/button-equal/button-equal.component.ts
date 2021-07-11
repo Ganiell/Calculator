@@ -13,4 +13,8 @@ export class ButtonEqualComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public calculate(): void{
+    this.numberService.setDisplay(eval(this.numberService.getDisplay()).toString())
+  }
+
 }

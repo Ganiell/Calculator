@@ -10,9 +10,13 @@ export class ButtonOperatorComponent implements OnInit {
 
   @Input() operator: string = ''
 
-  constructor(private numbersServie: NumbersService) { }
+  constructor(private numbersService: NumbersService) { }
 
   ngOnInit(): void {
+  }
+
+  addOperator(): void {
+    this.numbersService.setDisplay(this.numbersService.getDisplay() + this.operator)
   }
 
 
